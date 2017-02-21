@@ -45,5 +45,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=3m \
     dalvik.vm.heapmaxfree=12m
 
+# Rootless torch tile workaround
+PRODUCT_PACKAGES += \
+    Flashlight
+
 # Inherits fdroid
 $(call inherit-product-if-exists, vendor/fdroid/fdroid-vendor.mk)
