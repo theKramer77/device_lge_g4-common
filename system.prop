@@ -80,6 +80,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
     qemu.hw.mainkeys=0 \
     debug.sf.recomputecrop=0 \
+    debug.sf.disable_backpressure=1 \
     ro.qualcomm.cabl=2
 
 # MSM8992 HAL settings
