@@ -867,8 +867,8 @@ service qmuxd /system/vendor/bin/qmuxd
 service netmgrd /system/vendor/bin/netmgrd
     class main
     user root
-    group radio root wifi wakelock inet oem_2950
-    disabled
+    group root wifi wakelock radio inet oem_2950 system
+    writepid /dev/cpuset/system-background/tasks
 
 service ipacm-diag /system/vendor/bin/ipacm-diag
     class main
