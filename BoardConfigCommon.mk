@@ -26,6 +26,10 @@ include $(COMMON_PATH)/board/*.mk
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
         /vendor/bin/hw/rild=27
 
+#Camera Version Override for Pie
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+        /system/vendor/bin/mm-qcamera-daemon=24
+
 # Graphics
 HAVE_ADRENO_SOURCE:= false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
