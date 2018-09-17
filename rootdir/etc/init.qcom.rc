@@ -48,7 +48,6 @@ on early-init
     chmod 2770 /dev/socket/netmgr
 
     # Ril sockets
-    mkdir /dev/socket/netmgr 0750 radio radio
     mkdir /dev/socket/rild 0660 root radio
     mkdir /dev/socket/rild-debug 0660 radio system
 
