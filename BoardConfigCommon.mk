@@ -22,6 +22,10 @@ TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 include $(COMMON_PATH)/PlatformConfig.mk
 include $(COMMON_PATH)/board/*.mk
 
+# RILD
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+        /vendor/bin/hw/rild=27
+
 # Graphics
 HAVE_ADRENO_SOURCE:= false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
