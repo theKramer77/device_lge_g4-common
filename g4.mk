@@ -39,6 +39,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=3m \
     dalvik.vm.heapmaxfree=12m
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@1.0-service-legacymm
+
 # Rootless torch tile workaround
 PRODUCT_PACKAGES += \
     Flashlight
