@@ -23,6 +23,10 @@ include $(LOCAL_PATH)/system.prop
 # Inherits fdroid
 $(call inherit-product-if-exists, vendor/fdroid/fdroid-vendor.mk)
 
+# AMBIENT DISPLAY: Gestures
+PRODUCT_PACKAGES +=\
+    LGDoze
+
 # AUDIO
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
