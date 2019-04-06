@@ -32,6 +32,14 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
+#G4 PIE SHIM
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := g4_pie_ril.c
+LOCAL_MODULE := g4_pie_ril
+LOCAL_MODULE_TAGS := optional
+LOCAL_CFLAGS_arm64 += -DLIBSHIMS_64BIT
+include $(BUILD_SHARED_LIBRARY)
+
 # QSAP
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := libqsap_shim.c
