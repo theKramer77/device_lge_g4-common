@@ -767,6 +767,12 @@ service irsc_util /system/vendor/bin/irsc_util "/etc/sec_config"
     user root
     oneshot
 
+#Call the shell script to kill the ril daemon after it crashes
+service kill_ril-sh /system/vendor/bin/init.kill_ril.sh
+    class main
+    user root
+    oneshot
+
 service qcom-c_main-sh /system/vendor/bin/init.class_main.sh
     class main
     user root
