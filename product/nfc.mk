@@ -1,10 +1,10 @@
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
-    android.hardware.nfc@1.0-service \
-    com.android.nfc_extras \
-    NfcNci \
-    nfc_nci.default \
-    Tag
+#PRODUCT_PACKAGES += \
+#    android.hardware.nfc@1.0-impl \
+#    android.hardware.nfc@1.0-service \
+#    com.android.nfc_extras \
+#    NfcNci \
+#    nfc_nci.default \
+#    Tag
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/vendor/etc/libnfc-nci.conf \
