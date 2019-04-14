@@ -32,6 +32,10 @@ TARGET_BOOT_ANIMATION_RES := 1440
 
 include $(LOCAL_PATH)/product/*.mk
 
+# Google Camera
+PRODUCT_PACKAGES += \
+    GCam
+
 # Dalvik heap
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
