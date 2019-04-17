@@ -62,8 +62,7 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib64/libcneapiclient.so|system/vendor/lib64/libcne_shim.so \
     /system/vendor/lib/hw/camera.msm8992.so|/system/lib/libcamera_shim.so \
     /system/lib/libshim_camera.so:/system/lib/libcamera_client.so|libshim_cameraclient.so \
-    /system/vendor/lib/libmmcamera_stillmore_lib.so|/system/lib/libcamera_client.so \
-    /system/lib64/libc.so:/system/lib64/libhwbinder.so:/system/lib64/libhidltransport.so:/system/lib64/android.hardware.radio@1.1.so:/system/vendor/lib64/libril.so|g4_pie_ril.so
+    /system/vendor/lib/libmmcamera_stillmore_lib.so|/system/lib/libcamera_client.so
 
 #Use device specific data-ipa-cfg-mgr
 USE_DEVICE_SPECIFIC_IPACFG_MGR := true
