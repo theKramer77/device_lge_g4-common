@@ -40,3 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.85 \
     dalvik.vm.heapminfree=3m \
     dalvik.vm.heapmaxfree=12m
+
+# Inherits fdroid
+$(call inherit-product-if-exists, vendor/fdroid/fdroid-vendor.mk)
