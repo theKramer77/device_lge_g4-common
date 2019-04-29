@@ -1033,8 +1033,12 @@ service qcom-usb-sh /system/vendor/bin/init.qcom.usb.sh
     oneshot
 
 service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
-    -O/data/vendor/wifi/wpa/sockets -dd \
-    -g@android:wpa_wlan0
+    -ip2p0 -Dnl80211 -c/system/vendor/etc/wifi/wpa_supplicant.conf \
+    -I/system/vendor/etc/wifi/p2p_supplicant_overlay.conf \
+    -iwlan0 -Dnl80211 -c/system/vendor/etc/wifi/wpa_supplicant.conf \
+    -I/system/vendor/etc/wifi/wpa_supplicant_overlay.conf \
+    -puse_p2p_group_interface=1 \
+    -e/data/misc/wifi/entropy.bin -g@android:wpa_wlan0
     interface android.hardware.wifi.supplicant@1.0::ISupplicant default
     interface android.hardware.wifi.supplicant@1.1::ISupplicant default
     class main
