@@ -38,7 +38,7 @@ PRODUCT_PACKAGES += \
 
 # Dalvik heap
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=12m \
+    dalvik.vm.heapstartsize=16m \
     dalvik.vm.heapgrowthlimit=288m \
     dalvik.vm.heapsize=768m \
     dalvik.vm.heaptargetutilization=0.85 \
