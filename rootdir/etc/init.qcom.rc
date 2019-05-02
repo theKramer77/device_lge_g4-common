@@ -972,7 +972,7 @@ service ril-daemon /system/bin/wrild.sh
 on property:init.svc.ril-daemon=stopped
     start ril-daemon
 
-service hostapd /system/vendor/bin/hostapd -dd /data/misc/wifi/hostapd.conf
+service hostapd /system/vendor/bin/hw/hostapd -dd /data/misc/wifi/hostapd.conf
     class late_start
     user root
     group root
