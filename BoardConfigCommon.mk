@@ -22,13 +22,13 @@ TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 include $(COMMON_PATH)/PlatformConfig.mk
 include $(COMMON_PATH)/board/*.mk
 
-# RILD
-TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-        /vendor/bin/hw/rild=27
-
 #Camera Version Override for Pie
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
         /system/vendor/bin/mm-qcamera-daemon=24
+
+# RILD
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+        /vendor/bin/hw/rild=27
 
 # Graphics
 HAVE_ADRENO_SOURCE:= false
