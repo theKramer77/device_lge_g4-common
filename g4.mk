@@ -28,8 +28,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.effect@2.0-service \
-    android.hardware.soundtrigger@2.0-impl \
-    android.hardware.soundtrigger@2.0-service \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -372,11 +370,6 @@ PRODUCT_PACKAGES += \
     libqsap_shim \
     libcamera_shim \
     libshim_cameraclient
-
-# SOUND TRIGGER
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:system/vendor/etc/sound_trigger_mixer_paths.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/vendor/etc/sound_trigger_platform_info.xml
 
 # TORCH TILE: rootless workaround
 PRODUCT_PACKAGES += \
