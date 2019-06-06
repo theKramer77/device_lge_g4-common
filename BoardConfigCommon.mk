@@ -19,7 +19,6 @@ COMMON_PATH := device/lge/g4-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
-include $(COMMON_PATH)/PlatformConfig.mk
 include $(COMMON_PATH)/board/*.mk
 
 #Camera Version Override for Pie
