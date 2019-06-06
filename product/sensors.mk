@@ -13,9 +13,3 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.compass.xml
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.sensors.hal=e \
-    debug.qualcomm.sns.daemon=e \
-    debug.qualcomm.sns.hal=e \
-    debug.qualcomm.sns.libsensor1=e

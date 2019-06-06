@@ -14,23 +14,17 @@
 # limitations under the License.
 #
 
-# Screen density
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi 560dpi xxxhdpi
-PRODUCT_AAPT_PREF_CONFIG := 560dpi
-
 # Inherit proprietary blobs
 $(call inherit-product-if-exists, vendor/lge/g4-common/g4-common-vendor.mk)
+
+include $(LOCAL_PATH)/product/*.mk
+
+# Include system  properties file
+include $(LOCAL_PATH)/system.prop
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
-TARGET_BOOT_ANIMATION_RES := 1440
-
-include $(LOCAL_PATH)/product/*.mk
 
 # Google Camera
 PRODUCT_PACKAGES += \
