@@ -208,6 +208,10 @@ PRODUCT_PACKAGES += \
 	VisualizationWallpapers \
 	librs_jni
 
+# LOGCAT EXTREME
+PRODUCT_PACKAGES += \
+    LogcatExtreme
+
 # MEDIA/OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
