@@ -75,6 +75,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.oemlock@1.0-service
 
+# BUILDPROPEDITOR
+PRODUCT_PACKAGES += \
+    BuildPropEditor
+
 # CAMERA
 PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
