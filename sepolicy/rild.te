@@ -26,3 +26,6 @@ r_dir_file(rild, radio_data_file)
 
 # rild needs 'lock' for /data/misc/radio/qcril.db
 allow rild system_data_file:file { lock };
+
+# neverallow protected:
+allow rild system_data_file:file { write create };
