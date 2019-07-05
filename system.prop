@@ -145,7 +145,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dpm.feature=1 \
     ro.min_freq_0=384000 \
     ro.min_freq_4=384000
-	
+
+# RENDERING : Fix graphical glitches on skiagl
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.renderer=opengl
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
