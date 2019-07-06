@@ -139,7 +139,9 @@ TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 
 # GATEKEEPER
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.authsecret@1.0-service \
+    android.hardware.secure_element@1.0-service
 
 # GOOGLE CAMERA
 PRODUCT_PACKAGES += \
@@ -244,6 +246,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.1-service \
     com.android.nfc_extras \
     Tag \
     NfcNci
@@ -323,6 +326,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.0-impl \
     android.hardware.radio@1.0-service \
+    android.hardware.radio.config@1.0-service \
     android.hardware.radio.deprecated@1.0-impl \
     android.hardware.radio.deprecated@1.0-service \
     librmnetctl \
