@@ -26,8 +26,8 @@ allow qti_init_shell qmuxd:unix_stream_socket { connectto };
 allow qti_init_shell qmuxd_socket:dir { rw_file_perms create_file_perms search add_name };
 allow qti_init_shell qmuxd_socket:sock_file create_file_perms;
 
-
 # qcril db
-allow qti_init_shell ril_database:dir search;
-allow qti_init_shell ril_database:file getattr;
-allow qti_init_shell system_data_file:file getattr;
+allow qti_init_shell ril_database:dir { search open };
+allow qti_init_shell ril_database:file { getattr read open };
+allow qti_init_shell system_data_file:file { getattr write create open read setattr };
+allow qti_init_shell system_data_file:dir { setattr write add_name create };
