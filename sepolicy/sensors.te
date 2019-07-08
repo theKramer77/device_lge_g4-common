@@ -8,3 +8,6 @@ allow sensors property_socket:sock_file write;
 allow sensors qti_init_shell_exec:file entrypoint;
 
 allow sensors sensors_data_file:dir search;
+
+# https://android.googlesource.com/device/lge/hammerhead/+/9ae16c2016141cc578a4bd7f6baa69f39e1900c9
+allow sensors self:capability dac_override;
