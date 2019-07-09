@@ -10,6 +10,7 @@ allow wrild self:capability sys_ptrace;
 allow wrild shell_exec:file { getattr read };
 allow wrild system_file:file entrypoint;
 allow wrild system_file:file execute_no_trans;
+allow wrild tee:dir getattr;
 allow wrild toolbox_exec:file { execute execute_no_trans getattr open read };
 
 # wrild.sh uses ps and so will spam the log for unneeded stuff
@@ -48,7 +49,8 @@ dontaudit wrild ueventd:file { read };
 dontaudit wrild vendor_init:file { read };
 dontaudit wrild vendor_per_mgr:file read;
 dontaudit wrild vndservicemanager:file { read };
-dontaudit wrild vold:file { read };
+allow wrild vold:file { read open };
+allow wrild vold:dir { getattr search };
 dontaudit wrild zygote:file { read };
 
 allow wrild magisk:file read;

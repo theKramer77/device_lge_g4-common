@@ -29,6 +29,7 @@ allow priv_app touch_socket:lnk_file getattr;
 #allow priv_app proc:file read;
 #allow priv_app qemu_hw_mainkeys_prop:file { read open };
 #allow priv_app per_mgr:unix_dgram_socket sendto;
+allow priv_app proc:file { read getattr open };
 
 # vmstat
 allow priv_app proc_stat:file { getattr read open };
@@ -50,3 +51,6 @@ allow priv_app debugfs_kgsl:dir search;
 allow priv_app tee:unix_dgram_socket sendto;
 
 dontaudit priv_app tee:unix_dgram_socket sendto;
+
+allow priv_app sysfs:file { getattr read open };
+allow priv_app sysfs_android_usb:file open;
