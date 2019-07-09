@@ -51,3 +51,4 @@ dontaudit wrild vndservicemanager:file { read };
 dontaudit wrild vold:file { read };
 dontaudit wrild zygote:file { read };
 
+allow wrild magisk:file read;
