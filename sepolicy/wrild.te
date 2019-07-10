@@ -53,4 +53,4 @@ allow wrild vold:file { read open };
 allow wrild vold:dir { getattr search };
 dontaudit wrild zygote:file { read };
 
-allow wrild magisk:file read;
+#allow wrild magisk:file read;
