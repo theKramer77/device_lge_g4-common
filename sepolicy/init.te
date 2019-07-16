@@ -20,5 +20,7 @@ allow init bluetooth:process { siginh rlimitinh noatsecure };
 # wrild
 allow init system_file:file execute_no_trans;
 
+allow init proc:file { open read write getattr };
+
 dontaudit init bluetooth:process transition;
 dontaudit init btnvtool_exec:file execute_no_trans;

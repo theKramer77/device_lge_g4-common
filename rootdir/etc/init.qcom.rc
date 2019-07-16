@@ -1046,6 +1046,13 @@ service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     socket sensor_ctl_socket dgram 0666 camera camera
     writepid /dev/cpuset/system-background/tasks
 
+service laserinit /system/vendor/bin/laser_init
+    class late_start
+    user root
+    group root
+    seclabel u:r:laser_sensor:s0
+    oneshot
+
 service qseecomd /system/vendor/bin/qseecomd
     class core
     user root

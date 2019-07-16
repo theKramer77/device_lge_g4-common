@@ -51,7 +51,7 @@ allow untrusted_app sysfs_zram:dir search;
 allow untrusted_app sysfs_zram:file { read open getattr };
 allow untrusted_app tombstone_data_file:dir getattr;
 allow untrusted_app uicc_prop:file { getattr open };
-allow untrusted_app unlabeled:dir read;
+allow untrusted_app unlabeled:dir { read search };
 allow untrusted_app usf_prop:file { getattr open };
 allow untrusted_app vendor_rild_libpath_prop:file { getattr open };
 allow untrusted_app vndservice_contexts_file:file read;
