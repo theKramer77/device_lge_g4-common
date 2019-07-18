@@ -972,7 +972,7 @@ service real-ril-daemon /system/vendor/bin/hw/rild
 # the rild wrapper which ensures proper rild handling
 service ril-daemon /system/vendor/bin/wrild.sh
     user root
-    disabled
+    oneshot
 
 on property:init.svc.ril-daemon=stopped
     start ril-daemon
