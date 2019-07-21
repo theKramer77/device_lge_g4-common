@@ -5,6 +5,7 @@ init_daemon_domain(wrild)
 allow wrild ctl_start_prop:property_service set;
 allow wrild ctl_stop_prop:property_service set;
 allow wrild init:unix_stream_socket connectto;
+allow wrild netd:file { read open };
 allow wrild property_socket:sock_file write;
 allow wrild self:capability sys_ptrace;
 allow wrild shell_exec:file { getattr read };
