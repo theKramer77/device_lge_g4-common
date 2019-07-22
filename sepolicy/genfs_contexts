@@ -7,5 +7,5 @@ genfscon debugfs /sys/kernel/debug/kgsl               u:object_r:debugfs_kgsl:s0
 genfscon debugfs /rmt_storage                         u:object_r:debugfs_rmt:s0
 genfscon debugfs /sys/kernel/debug/rmt_storage        u:object_r:debugfs_rmt:s0
 genfscon debugfs /rfs_access                          u:object_r:debugfs_rfs:s0
-genfscon proc /vmstat                                 u:object_r:proc_vmstat:s0
-genfscon proc  /sys/kernel/sched_upmigrate_min_nice    u:object_r:proc_kernel_sched:s0
+#genfscon proc /vmstat                                 u:object_r:proc_vmstat:s0
+#genfscon proc  /sys/kernel/sched_upmigrate_min_nice    u:object_r:proc_kernel_sched:s0
