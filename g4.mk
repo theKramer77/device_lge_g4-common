@@ -68,9 +68,6 @@ PRODUCT_PACKAGES += \
     hwaddrs \
     libprotobuf-cpp-full
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
-
 # BOOTLOADER
 PRODUCT_PACKAGES += \
     android.hardware.oemlock@1.0-service
