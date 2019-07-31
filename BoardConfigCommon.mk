@@ -23,6 +23,9 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 # inherit from the proprietary version
 -include vendor/lge/g4-common/BoardConfigVendor.mk
 
+# Build With Thread Support
+LLVM_ENABLE_THREADS := true
+
 # ARCH
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
