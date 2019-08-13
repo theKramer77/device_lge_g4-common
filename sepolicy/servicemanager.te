@@ -7,3 +7,8 @@ allow servicemanager rild:process getattr;
 allow servicemanager imscm:dir search;
 allow servicemanager imscm:file { read open };
 allow servicemanager imscm:process getattr;
+
+# watchdog
+allow servicemanager wrild:dir search;
+allow servicemanager wrild:file { read open };
+allow servicemanager wrild:process getattr;
