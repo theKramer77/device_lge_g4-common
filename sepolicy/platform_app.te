@@ -8,3 +8,5 @@ allow platform_app tee:unix_dgram_socket sendto;
 dontaudit platform_app debugfs_kgsl:dir search;
 dontaudit platform_app tee:unix_dgram_socket sendto;
 
+allow platform_app proc_vmstat:file { getattr open read };
+allow platform_app radio_data_file:dir getattr;
