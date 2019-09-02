@@ -47,3 +47,7 @@
 
 # Service HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service u:object_r:hal_authsecret_default_exec:s0
+/sys/devices/soc.0/qpnp-flash-led-26/leds/led:torch_1/brightness	u:object_r:flashlight_app_data_file:s0
+
+# pulse.sh
+/sbin/pulse.sh						u:object_r:pulse_exec:s0
