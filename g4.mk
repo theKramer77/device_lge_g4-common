@@ -204,10 +204,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-impl:64
 
-# LIVEDISPLAY
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@1.0-service-legacymm
-
 # LIVE WALLPAPER
 PRODUCT_PACKAGES += \
 	LiveWallpapers \
